@@ -19,10 +19,14 @@
 }
 
 #about p {
+  color: rgb(0,82,76);
   font-family: "Gaegu"
 }
 
-
+ul {
+  color: rgb(0,82,76);
+  font-family: "Gaegu"
+}
 
 h1 {
   color: rgb(6,214,160);
@@ -60,6 +64,7 @@ body {
 #about {
   margin-left: 20px;
   border: solid rgb(248,177,193) 3px;
+  border-radius: 16px;
   background-color: rgb(6,214,160);
   margin-right: 800px;
 }
