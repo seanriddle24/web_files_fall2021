@@ -3,6 +3,11 @@ p {
   color: rgb(0,82,76);
 }
 
+h1 {
+  font-family: "Cherry+Swash"
+}
+
 img {
-  width: 15vw;
+  width: 25vw;
+  margin: 20px;
 }
