@@ -1,10 +1,24 @@
-p {
+#top p {
   color: rgb(0,82,76);
   border: solid rgb(248,177,193) 3px;
   border-radius: 16px;
   background-color: rgb(6,214,160);
   margin-left: 15px;
   margin-right: 800px;
+  font-family: "Gaegu"
+}
+
+#goals p {
+  color: rgb(0,82,76);
+  border: solid rgb(248,177,193) 3px;
+  border-radius: 16px;
+  background-color: rgb(6,214,160);
+  margin-left: 15px;
+  margin-right: 800px;
+  font-family: "Gaegu"
+}
+
+#about p {
   font-family: "Gaegu"
 }
 
@@ -20,8 +34,8 @@ h2 {
   font-family: "Cherry Swash"
 }
 
-h3 {
-  color: rgb(6,214,160);
+#about h3 {
+  color: rgb(0,82,76);
   font-family: "Cherry Swash"
 }
 
@@ -37,4 +51,15 @@ body {
 
 #top {
   margin-left: 20px;
+}
+
+#goals {
+  margin-left: 20px;
+}
+
+#about {
+  margin-left: 20px;
+  border: solid rgb(248,177,193) 3px;
+  background-color: rgb(6,214,160);
+  margin-right: 800px;
 }
