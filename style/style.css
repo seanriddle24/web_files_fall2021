@@ -20,6 +20,13 @@
 
 #about p {
   color: rgb(0,82,76);
+  margin-left: 15px;
+  font-family: "Gaegu"
+}
+
+#links p{
+  color: rgb(0,82,76);
+  margin-left: 15px;
   font-family: "Gaegu"
 }
 
@@ -43,6 +50,22 @@ h2 {
   font-family: "Cherry Swash"
 }
 
+#links h3 {
+  color: rgb(6,214,160);
+  font-family: "Cherry Swash"
+}
+
+a:link {
+  color: rgb(6,214,160);
+}
+
+a:visited {
+  color: rgb(154,154,154);
+}
+
+a:hover {
+  color: rgb(0,163,152);
+}
 
 img {
   width: 25vw;
@@ -67,4 +90,8 @@ body {
   border-radius: 16px;
   background-color: rgb(6,214,160);
   margin-right: 800px;
+}
+
+#links {
+  margin-left: 20px;
 }
