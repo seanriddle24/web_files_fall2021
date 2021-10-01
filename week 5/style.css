@@ -1,0 +1,28 @@
+p {
+  color: red;
+}
+
+body {
+  padding: 0px;
+}
+
+#hero {
+  width: 100vw;
+  height: 20vw;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+#hero img {
+  width: 100vw;
+  position: relative;
+  bottom: 575px;
+}
+
+#hero h1 {
+  z-index: 1;
+  position: relative;
+  font-size: 5vw;
+  top: 10vh;
+}

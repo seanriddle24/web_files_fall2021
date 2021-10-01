@@ -1,5 +1,7 @@
 #top p {
   color: rgb(0,82,76);
+  font-size: 20pt;
+  font-weight: bold;
   border: solid rgb(248,177,193) 3px;
   border-radius: 16px;
   background-color: rgb(6,214,160);
@@ -11,6 +13,8 @@
 
 #goals p {
   color: rgb(0,82,76);
+  font-weight: bold;
+  font-size: 15pt;
   border: solid rgb(248,177,193) 3px;
   border-radius: 16px;
   background-color: rgb(6,214,160);
@@ -22,6 +26,8 @@
 
 #about p {
   color: rgb(0,82,76);
+  font-weight: bold;
+  font-size: 15pt;
   margin-left: 15px;
   font-family: "Gaegu"
 }
@@ -34,30 +40,37 @@
 
 ul {
   color: rgb(0,82,76);
+  font-weight: bold;
+  font-size: 15pt;
   font-family: "Gaegu"
 }
 
 h1 {
   color: rgb(6,214,160);
+  font-size: 25pt;
   font-family: "Cherry Swash"
 }
 
 h2 {
   color: rgb(6,214,160);
+  font-size: 25pt;
   font-family: "Cherry Swash"
 }
 
 #about h3 {
   color: rgb(0,82,76);
+  font-size: 25pt;
   font-family: "Cherry Swash"
 }
 
 #links h3 {
   color: rgb(6,214,160);
+  font-size: 25pt;
   font-family: "Cherry Swash"
 }
 
 a:link {
+  font-size: 15pt;
   color: rgb(6,214,160);
 }
 
