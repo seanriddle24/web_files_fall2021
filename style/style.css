@@ -8,6 +8,7 @@
   margin-left: 15px;
   margin-right: 800px;
   padding: 20px;
+  padding-left: 50px;
   font-family: "Gaegu"
 }
 
@@ -18,9 +19,9 @@
   border: solid rgb(248,177,193) 3px;
   border-radius: 16px;
   background-color: rgb(6,214,160);
-  margin-left: 15px;
+  margin-left: 0px;
   margin-right: 800px;
-  padding: 20px;
+  padding: 30px;
   font-family: "Gaegu"
 }
 
