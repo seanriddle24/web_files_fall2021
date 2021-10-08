@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> quote generator </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section id="quotesection">
+  <h1 id="qtext"> get a quote, dude </h1>
+  <button id="quoteman"> new quote </button>
+  </section>
+
+  <section id="flex">
+    <div class="flexitem">
+      <h2> one </h2>
+    </div>
+
+    <div class="flexitem">
+      <h2> two </h2>
+    </div>
+
+    <div class="flexitem">
+      <h2> three </h2>
+    </div>
+
+  </section>
+
+  <script>
+    const quotes = ["I don't try to intimidate anybody before a fight. That's nonsense. I intimidate people by hitting them.", "When in doubt, make no sense. No sense is good. And nonsense is good.", "By redefining, we grow.", "Ignorance is temporary but stupid is permanent.", "When life gives you melons, you could be dyslexic.", "It’s always darkest before it’s pitch black.", "Sometimes when I close my eyes, I can’t see"];
+    let quotecount = 0;
+
+
+    function buttonClicked() {
+      console.log(quotes[quotecount]);
+      document.getElementById("qtext").innerHTML = quotes[quotecount];
+      if(quotecount>5) {
+        quotecount=0;
+      }
+      else {
+      quotecount += 1;
+    }
+    }
+    document.getElementById("quoteman").addEventListener("click", buttonClicked);
+
+
+  </script>
+
+</body>
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,24 @@
+#quotesection {
+  background-color: cyan;
+  margin: 30vh 20vw;
+  padding: 10vh 10vw;
+}
+
+button {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+#flex {
+  display: flex;
+  margin: 150px;
+}
+
+div {
+  border: 1px solid black;
+  margin-left: 2vw;
+}
+
+.flexitem{
+  flex-grow: 1;
+}

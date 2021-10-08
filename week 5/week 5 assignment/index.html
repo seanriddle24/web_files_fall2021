@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> java stuff </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gaegu">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cherry+Swash">
+
+</head>
+
+
+<body>
+  <section id="section1">
+  <h1> welcome to the javascript testing ground </h1>
+  <p id="maintext"> here is some text. wow. how incredible. </p>
+
+  <button id="button1"> it's a button </button>
+
+  <button id="button2"> it's another button </button>
+
+  </section>
+
+  <script>
+    const colorsList = ["rgb(6,214,160)", "rgb(248,177,193)"];
+    let colorId = 0;
+    console.log("hella");
+    function click1() {
+      document.getElementById('maintext').style.color = "red";
+      document.getElementById('maintext').innerHTML = "oh, wow. i'm red now. ain't that something.";
+
+    }
+
+    function click2() {
+      document.getElementById('section1').style.background = colorsList[colorId];
+      if(colorId == 0) {
+        colorId = 1;
+      }
+      else {
+        colorId=0
+      }
+      document.getElementById("maintext").innerHTML = "oh hey, you changed the background color. neat."
+
+    }
+    document.getElementById("button1").addEventListener("click", click1);
+    document.getElementById("button2").addEventListener("click", click2);
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+</body>
+
+
+</html>

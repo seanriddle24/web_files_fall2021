@@ -1,0 +1,31 @@
+#section1 {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 7vw;
+  padding: 60px;
+  border: solid rgb(0,82,76) 3px;
+  border-radius: 6px;
+  background-color: white;
+}
+button {
+  border-radius: 6px;
+  padding: 10px;
+  font-family: "Gaegu";
+  font-weight: bold;
+  font-size: 15pt;
+  border-color: rgb(0,82,76);
+}
+
+h1 {
+  font-family: "Cherry Swash";
+}
+
+p {
+  font-family: "Gaegu";
+  font-weight: bold;
+  font-size: 15pt;
+}
+
+body {
+  background-color: white;
+}
