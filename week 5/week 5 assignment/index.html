@@ -26,8 +26,13 @@
     let colorId = 0;
     console.log("hella");
     function click1() {
-      document.getElementById('maintext').style.color = "red";
-      document.getElementById('maintext').innerHTML = "oh, wow. i'm red now. ain't that something.";
+      if(document.getElementById("maintext").style.color == "red") {
+        document.getElementById("maintext").innerHTML = "yep. still red. very cool."
+      }
+      else{
+        document.getElementById('maintext').style.color = "red";
+        document.getElementById('maintext').innerHTML = "oh, wow. i'm red now. ain't that something.";
+      }
 
     }
 
