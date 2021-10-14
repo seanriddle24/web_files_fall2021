@@ -4,4 +4,9 @@ h1 {
 
 img {
   width: 80vw;
+  margin-left: 10vw;
+}
+
+#quotes {
+  margin-left: 20vw;
 }

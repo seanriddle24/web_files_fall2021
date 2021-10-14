@@ -20,14 +20,14 @@
   </section>
 
   <script>
-    const quotes = ["It’s dangerous to go alone! Take this.", "Hey! Listen!", "You've met with a terrible fate, haven’t you?", "We'll be friends forever. Won't we?", "The twilight there holds a serene beauty...you have seen it yourself as the sun sets on this world.", "Courage need not be remembered, for it is never forgotten.", "Whenever there is a meeting, a parting is sure to follow. However, that parting needs not last forever. Whether a parting be forever or merely for a short time... that is up to you.", "The passion of friendship will soon blossom into a righteous power and through it, you will know which way to go.", "The sword has no strength unless the hand that holds it has courage.", "I coveted that wind, I suppose.", "You must look forward and walk a path of hope, trusting that it will sustain you when darkness comes."];
+    const quotes = ["It’s dangerous to go alone! Take this.", "Hey! Listen!", "You've met with a terrible fate, haven’t you?", "We'll be friends forever. Won't we?", "The twilight there holds a serene beauty...you have seen it yourself as the sun sets on this world.", "Courage need not be remembered, for it is never forgotten.", "Whenever there is a meeting, a parting is sure to follow. However, that parting needs not last forever. Whether a parting be forever or merely for a short time... that is up to you.", "The passion of friendship will soon blossom into a righteous power and through it, you will know which way to go.", "The sword has no strength unless the hand that holds it has courage.", "I coveted that wind, I suppose.", "You must look forward and walk a path of hope, trusting that it will sustain you when darkness comes.", "May we meet again in another life..."];
     let quotecount = 0;
 
 
     function buttonClicked() {
       console.log(quotes[quotecount]);
       document.getElementById("quoteHere").innerHTML = quotes[quotecount];
-      if(quotecount>9) {
+      if(quotecount>10) {
         quotecount=0;
       }
       else {
