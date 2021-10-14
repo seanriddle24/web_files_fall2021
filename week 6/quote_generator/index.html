@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> zelda quote generator </title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <img id="header" alt="text that says 'the legend of zelda quote generator' with an image of the triforce" src=""
+  <section id="quotes">
+    <h1 id="quoteHere"> Find your courage. </h1>
+    <button id="quoteButton"> New Quote </button>
+  </section>
+
+
+
+
+  </section>
+
+  <script>
+    const quotes = ["It’s dangerous to go alone! Take this.", "Hey! Listen!", "You've met with a terrible fate, haven’t you?", "We'll be friends forever. Won't we?", "The twilight there holds a serene beauty...you have seen it yourself as the sun sets on this world.", "Courage need not be remembered, for it is never forgotten.", "Whenever there is a meeting, a parting is sure to follow. However, that parting needs not last forever. Whether a parting be forever or merely for a short time... that is up to you.", "The passion of friendship will soon blossom into a righteous power and through it, you will know which way to go.", "The sword has no strength unless the hand that holds it has courage.", "I coveted that wind, I suppose.", "You must look forward and walk a path of hope, trusting that it will sustain you when darkness comes."];
+    let quotecount = 0;
+
+
+    function buttonClicked() {
+      console.log(quotes[quotecount]);
+      document.getElementById("quoteHere").innerHTML = quotes[quotecount];
+      if(quotecount>9) {
+        quotecount=0;
+      }
+      else {
+      quotecount += 1;
+    }
+    }
+    document.getElementById("quoteButton").addEventListener("click", buttonClicked);
+
+    </script>
+
+
+</body>
+
+</html>
