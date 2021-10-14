@@ -8,5 +8,21 @@ img {
 }
 
 #quotes {
-  margin-left: 20vw;
+  margin-left: 17vw;
+  margin-right: 20vw;
+}
+
+#quoteButton img {
+  width: 10vw;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+#quoteButton {
+  width: 11vw;
+  border-radius: 8px;
+}
+
+button:hover img {
+  opacity: 0.7;
 }
