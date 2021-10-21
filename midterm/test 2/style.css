@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(30, 26, 22)
+}
+
+#gameText {
+  width: 40vw;
+  height: 45vh;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  padding-left: 20px;
+  padding-right: 40px;
+  border: solid 3px rgb(74,79,64);
+  border-radius: 11px;
+  background-color: black;
+}
+
+p {
+  font-family: "Suravaram";
+  color: rgb(36,255,0)
+}

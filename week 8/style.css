@@ -1,0 +1,29 @@
+#tabs {
+  display: flex;
+  margin: 10vh 10vw 0 10vw;
+}
+
+#items {
+  display: flex;
+  margin: 0vh 10vw 0 10vw;
+}
+
+.thing {
+  flex-grow: 1;
+  height: 100px;
+  width: auto;
+  border: 1px solid black;
+}
+
+#image, #menu {
+  flex-grow: 1;
+  width:auto;
+  height: 100px;
+  background-color: pink;
+  border: 1px solid black;
+}
+
+h2 {
+  padding-bottom: 0;
+  margin-right: 20px;
+}

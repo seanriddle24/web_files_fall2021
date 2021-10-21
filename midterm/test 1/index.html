@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> game test 1 </title>
+
+</head>
+
+<body>
+  <section id="game">
+  <p id="gameText"> go left or right? </p>
+
+  <button id="option1left"> left </button>
+  <button id="option1right"> right </button>
+
+</section>
+
+
+
+<script>
+
+  function introLeft() {
+    console.log("yessir");
+    document.getElementById("option1left").style.display = "none";
+    document.getElementById("gameText").innerHTML = "you have gone left.";
+    document.getElementById("game").innerHTML += "<button id='back'>" + "go back" + "</button>";
+  }
+
+  function introRight() {
+    console.log("wowie");
+    document.getElementById("gameText").innerHTML = "you have gone right.";
+  }
+
+  document.getElementById("option1left").addEventListener("click", introLeft);
+  document.getElementById("option1right").addEventListener("click", introRight);
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
