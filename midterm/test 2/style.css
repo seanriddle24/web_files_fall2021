@@ -2,13 +2,27 @@ body {
   background-color: rgb(30, 26, 22)
 }
 
-#gameText {
+#top {
+  display: flex;
+  margin: auto
+}
+
+.statue {
+  height: 60vh;
+  width:auto;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 20vh;
+  margin-bottom: -26.8vh;
+}
+
+.gameText {
   width: 40vw;
-  height: 45vh;
-  margin-left: 30vw;
-  margin-right: 30vw;
+  height: 50vh;
   padding-left: 20px;
   padding-right: 40px;
+  margin-left: 0;
+  margin-right: 0;
   border: solid 3px rgb(74,79,64);
   border-radius: 11px;
   background-color: black;
@@ -16,9 +30,40 @@ body {
 
 p {
   font-family: "Suravaram";
-  color: rgb(36,255,0)
+  color: rgb(36,255,0);
+}
+
+button {
+  border: solid 3px rgb(74,79,64);
+  border-radius: 11px;
+  background-color: black;
+  font-family: "Suravaram";
+  font-size: 18pt;
+  color: rgb(36,255,0);
+  align-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+#buttons {
+  margin: auto;
+  padding-left: 8vw;
+
+  margin-top: 40px;
+  width: 40vw;
 }
 
 img {
-  width: 10vw;
+  height: 60vh;
+}
+
+#bottom {
+  margin-top: 5vw;
+  margin-left: -10px;
+  margin-bottom: 0px;
+  width: 100vw;
+  height: 20vw;
+  border: solid 1px rgb(10,8,8);
+  background-color: rgb(10,8,8);
 }
