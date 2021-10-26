@@ -67,7 +67,14 @@ img {
   background-color: rgb(10,8,8);
 }
 
+#leftRoom {
+  display: none;
+}
+
 a:link {
-  color: rgb(223,73,23);
-  font-size: 18pt;
+  color: rgb(131,181,166);
+}
+
+a:visited {
+  color: rgb(131,181,166);
 }
