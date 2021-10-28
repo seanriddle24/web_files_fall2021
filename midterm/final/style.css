@@ -71,6 +71,10 @@ img {
   display: none;
 }
 
+#backDoor {
+  display: none;
+}
+
 a:link {
   color: rgb(131,181,166);
 }
