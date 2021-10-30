@@ -71,7 +71,15 @@ img {
   display: none;
 }
 
+#rightRoom {
+  display: none;
+}
+
 #backDoor {
+  display: none;
+}
+
+#backToMain {
   display: none;
 }
 
