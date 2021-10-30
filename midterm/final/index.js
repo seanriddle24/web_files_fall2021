@@ -1,8 +1,8 @@
 var doorLocked = 0;
 
-var leftGemGet = 1;
+var leftGemGet = 0;
 
-var rightGemGet = 1;
+var rightGemGet = 0;
 
 var leftGemPlaced = 0;
 
@@ -88,6 +88,7 @@ function inspectStatues() {
       document.getElementById("hub").innerHTML += "<p> You hear a click.";
       doorClick -= 2;
     }
+    doorLocked = 1;
   }
 
 
@@ -134,7 +135,7 @@ function goLeft() {
   for (let i = 0; i < leftButtons.length; i++) {
     document.getElementById(leftButtons[i]).style.display="initial";
   }
-  document.getElementById("backLeft").addEventListener("click", returnHub);
+  document.getElementById("pedestalInspect").addEventListener("click", inspectPedestal);
 }
 
 function goRight() {
@@ -154,6 +155,11 @@ function backRight() {
   document.getElementById("rightRoom").innerHTML = "<p> You enter the room to the right. </p> <p> This chamber appears to be a large plaza of some sort. The floor is tiled with stone setts. There is a <a id='fountainInspect' href='#'> fountain </a> in the center of the room, upon which is perched a <a id='warriorInspect' href='#'> tall statue </a> of a woman in armor. </p>";
   document.getElementById("fountainInspect").addEventListener("click", inspectFountain);
   document.getElementById("warriorInspect").addEventListener("click", inspectWarrior);
+}
+
+function backLeft() {
+  document.getElementById("leftRoom").innerHTML = "<p> You enter the room to the left. </p> <p> Tall carved columns line the walls around you. In the center of the room is a <a id='pedestalInspect' href='#'> raised pedestal </a>. </p>"
+  document.getElementById("pedestalInspect").addEventListener("click", inspectPedestal);
 }
 
 function inspectFountain() {
@@ -253,14 +259,51 @@ function inspectWarrior() {
   }
   else {
     document.getElementById("rightRoom").innerHTML += "<p> It remains motionless. </p> <p> <a id='back' href='#'> Back. </a> </p>";
+    document.getElementById("back").addEventListener("click", backRight);
   }
-  document.getElementById("back").addEventListener("click", backRight);
+
+}
+
+function inspectPedestal(){
+  document.getElementById("leftRoom").innerHTML = "<p> The pedestal is carved out of a material you don't recognize. Its thrumming with energy. There is an indentation in the shape of a handprint on the top. </p>";
+  document.getElementById("leftRoom").innerHTML += "<p> <a id='next' href='#'> Place your hand on the pedestal. </a> </p>";
+  document.getElementById("leftRoom").innerHTML += "<p> <a id='back' href='#'> Back. </a> </p>";
+
+  document.getElementById("next").addEventListener("click", touchPedestal);
+  document.getElementById("back").addEventListener("click", backLeft);
+}
+
+function touchPedestal() {
+  if (leftGemGet == 0 && leftGemPlaced == 0) {
+    document.getElementById("leftRoom").innerHTML = "<p> You place your hand in the indentation. </p>";
+    document.getElementById("leftRoom").innerHTML += "<p> Suddenly, the pedestal begins humming louder. A stone clamp rises out of the pedestal and locks your hand in place. </p>";
+    document.getElementById("leftRoom").innerHTML += "<p> <a id='wait' href='#'> Wait. </a> </p>";
+    document.getElementById("wait").addEventListener("click", touchPedestal2);
+
+  }
+  else {
+    document.getElementById("leftRoom").innerHTML = "<p> You place your hand in the indentation. </p>";
+    document.getElementById("leftRoom").innerHTML += "<p> Nothing happens. </p>"
+    document.getElementById("leftRoom").innerHTML += "<p> <a id='back' href='#'> Back. </a> </p>";
+    document.getElementById("back").addEventListener("click", backLeft);
+  }
+}
+
+function touchPedestal2() {
+  document.getElementById("leftRoom").innerHTML = "<p> After a few moments, the clamp lets go. You feel the pedestal press something cold into the palm of your hand. You turn it over to see a red gemstone. It looks like it would fit in the eye of the statue left of the door. </p>";
+  leftGemGet = 1;
+  document.getElementById("leftRoom").innerHTML += "<p> The pedestal must have been scanning you for something. You supposed it found whatever it was looking for. </p>";
+  document.getElementById("leftRoom").innerHTML += "<p> <a id='back' href='#'> Back. </a> </p>";
+  document.getElementById("back").addEventListener("click", backLeft);
+
 }
 
 function openDoorEvent() {
   // if player opens the door. different options depending on if the door is locked - see variable 'doorLocked'
   if(doorLocked == 1) {
-    document.getElementById("hub").innerHTML = "<p> the door opens. </p>";
+    document.getElementById("hub").innerHTML = "<p> You push on the doors. With great effort, they start to scrape against the stone floor. A bright, unnatural light fills the antechamber as the doors are opened. </p>";
+    document.getElementById("hub").innerHTML += "<p> At long last, your search for the lost city is complete. But your adventure is only just beginning. </p>";
+    document.getElementById("hub").innerHTML += "<p> THE END </p>";
     // flesh out this text
     document.getElementById("buttons").style.visibility = "hidden";
   }
