@@ -1,0 +1,82 @@
+@media screen and (min-width:700px) {
+  img {
+    width: 30vw;
+    margin-left: 35vw;
+    margin-right: 35vw;
+    margin-top: 3vw;
+  }
+}
+
+@media screen and (max-width:701px) {
+  img {
+    width: 92vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 3vw;
+  }
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(6,214,160);
+  border: solid rgb(248,177,193) 3px;
+  border-radius: 16px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 3vw;
+}
+
+p {
+  color: rgb(0,82,76);
+  font-weight: bold;
+  font-family: "Gaegu";
+  margin: 5%;
+  font-size: 15pt;
+}
+
+
+ul {
+  color: rgb(0,82,76);
+  font-weight: bold;
+  font-size: 15pt;
+  font-family: "Gaegu"
+}
+
+h1 {
+  color: rgb(6,214,160);
+  font-size: 25pt;
+  font-family: "Cherry Swash"
+}
+
+h2 {
+  color: rgb(6,214,160);
+  font-size: 25pt;
+  font-family: "Cherry Swash"
+}
+
+h3 {
+  color: rgb(6,214,160);
+  font-size: 25pt;
+  font-family: "Cherry Swash"
+}
+
+a:link {
+  font-size: 15pt;
+  color: rgb(6,214,160);
+}
+
+a:visited {
+  color: rgb(154,154,154);
+}
+
+a:hover {
+  color: rgb(0,163,152);
+}
+
+
+
+body {
+  background-color: rgb(0,82,76)
+}
