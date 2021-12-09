@@ -5,5 +5,5 @@ let pic;
 
 for(i=0;i<pics;i++){
   pic = 1+i;
-document.getElementById('portfolio').innerHTML += "<img src='assets/portfolio/" + pic + ".jpg'" + "class='portfoliopic' id='pic" + pic+ "' />";
+document.getElementById('portfolio').innerHTML += "<div class='pimage'> <img src='assets/portfolio/" + pic + ".jpg'" + "class='portfoliopic' id='pic" + pic + "' /> </div>";
 }
