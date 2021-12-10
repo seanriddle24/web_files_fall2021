@@ -44,6 +44,10 @@ nav a {
   margin-right: 40px;
   font-family: 'Abhaya Libre', serif;
   font-size: 48pt;
+  color: rgb(103,103,103);
+}
+
+nav a:hover {
   color: black;
 }
 
@@ -58,4 +62,38 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#about p {
+  width: 60vw;
+
+}
+
+#home_links {
+  display: flex;
+  justify-content: center;
+}
+
+#homeimage1 {
+  height: 30vw;
+  width: 29vw;
+  object-fit: cover;
+}
+
+#homeimage2 {
+  height: 30vw;
+}
+
+.homeimage {
+  background-color: black;
+  padding: 0px;
+  margin: 3vw;
+}
+
+.homeimage img {
+  transition: opacity .3s linear;
+}
+
+.homeimage img:hover {
+  opacity: .7;
 }
