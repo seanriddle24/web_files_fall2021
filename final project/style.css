@@ -98,7 +98,7 @@ nav a:hover {
   opacity: .7;
 }
 
-#traditionalpieces {
+#pieces {
   margin-top: 30px;
   display: grid;
   grid-template-columns: auto auto;
@@ -107,7 +107,7 @@ nav a:hover {
   grid-column-gap: 30px;
 }
 
-#traditionalpieces img {
+#pieces img {
   width: 20vw;
   height: 20vw;
   object-fit: cover;
@@ -136,7 +136,7 @@ nav a:hover {
   margin: 0;
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
 }
 .overlaytext {
   color: white;
@@ -144,8 +144,8 @@ nav a:hover {
   padding: 10vw;
 }
 
-#overlay1 img {
+.overlayimage img {
   z-index: 3;
-  width: 30vw;
+  height: 90vh;
   margin: 25px;
 }
