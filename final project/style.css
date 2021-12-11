@@ -97,3 +97,55 @@ nav a:hover {
 .homeimage img:hover {
   opacity: .7;
 }
+
+#traditionalpieces {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+}
+
+#traditionalpieces img {
+  width: 20vw;
+  height: 20vw;
+  object-fit: cover;
+}
+
+.art {
+  background-color: black;
+  padding: 0px;
+  margin: 3vw;
+}
+
+.art img {
+  transition: opacity .3s linear;
+}
+
+.art img:hover {
+  opacity: .7;
+}
+
+.overlay {
+  z-index: 2;
+  background-color: rgba(0,0,0,0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+.overlaytext {
+  color: white;
+  align-content: center;
+  padding: 10vw;
+}
+
+#overlay1 img {
+  z-index: 3;
+  width: 30vw;
+  margin: 25px;
+}
