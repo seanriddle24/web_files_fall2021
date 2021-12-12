@@ -33,3 +33,5 @@ document.getElementById("overlay3").addEventListener("click", function() {dismis
 document.getElementById("overlay4").addEventListener("click", function() {dismissArt("overlay4");}, false);
 document.getElementById("overlay5").addEventListener("click", function() {dismissArt("overlay5");}, false);
 document.getElementById("overlay6").addEventListener("click", function() {dismissArt("overlay6");}, false);
+
+// https://stackoverflow.com/questions/12024483/how-to-pass-parameter-to-function-using-in-addeventlistener here's the site that helped me figure this bit out
